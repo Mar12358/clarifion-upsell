@@ -1,0 +1,11 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+@media screen and (min-device-width: 768px) {
+  body {
+    background-color: #fff;
+  }
+}
