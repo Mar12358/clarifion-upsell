@@ -101,7 +101,7 @@ body {
   width: 106px;
   height: 20px;
   flex-shrink: 0;
-  background-image: url(../assets/clarifion_img.png);
+  background-image: url(../assets/clarifion_img_mob.png);
   background-size: cover;
   background-repeat: no-repeat;
   display: block;
@@ -121,7 +121,8 @@ body {
   height: 64px;
 }
 
-.lock-desktop {
+.lock-desktop,
+.not-visible-on-mobile {
   display: none;
 }
 
@@ -170,5 +171,28 @@ body {
 
   .email-contact {
     padding-left: 16px;
+  }
+
+  .not-visible-on-dsk {
+    display: none;
+  }
+
+  .not-visible-on-mobile {
+    display: flex;
+  }
+
+  .header-guarantee {
+    justify-content: space-between;
+    padding: 4px 9.1% 4px 8.4%;
+  }
+
+  .clarifion-img {
+    width: 192px;
+    height: 36px;
+    background-image: url(../assets/clarifion_img_dsk.png);
+  }
+
+  .lower-header-container {
+    padding: 16px 127px 16px 127px;
   }
 }
