@@ -483,6 +483,10 @@ h1 {
   display: block;
 }
 
+#mask0_78_423 {
+  mask-type: alpha;
+}
+
 @media screen and (min-device-width: 768px) {
   .encryptation-container {
     padding-top: 0;
