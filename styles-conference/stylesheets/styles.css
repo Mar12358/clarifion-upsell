@@ -56,6 +56,8 @@ body {
   padding-right: 12px;
   border-right: 1px solid #fff;
   text-transform: capitalize;
+  height: 14px;
+  padding-top: 1px;
 }
 
 .email-contact {
@@ -70,7 +72,6 @@ body {
   font-style: normal;
   font-weight: 400;
   line-height: 140%; /* 16.8px */
-  height: 14px;
 }
 
 .copyright-contact-container {
@@ -120,8 +121,54 @@ body {
   height: 64px;
 }
 
+.lock-desktop {
+  display: none;
+}
+
 @media screen and (min-device-width: 768px) {
-  body {
-    background-color: #fff;
+  .encryptation-container {
+    padding-top: 0;
+  }
+
+  .copyright-contact-container {
+    display: flex;
+    align-items: center;
+  }
+
+  .main-footer {
+    height: 88px;
+    padding-left: 8.4%;
+    padding-right: 7.9%;
+  }
+
+  .footer-block {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .copyright,
+  .email-contact,
+  .encryptation {
+    font-size: 16px;
+  }
+
+  .lock-mobile {
+    display: none;
+  }
+
+  .lock-desktop {
+    display: block;
+  }
+
+  .copyright {
+    padding-right: 16px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+  }
+
+  .email-contact {
+    padding-left: 16px;
   }
 }
