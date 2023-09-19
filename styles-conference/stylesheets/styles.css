@@ -463,7 +463,8 @@ h1 {
   text-align: center;
 }
 
-.footer-guarantee {
+.footer-guarantee,
+.image-container  {
   color: #4d5254;
   font-size: 12px;
   font-style: normal;
@@ -485,6 +486,12 @@ h1 {
 
 #mask0_78_423 {
   mask-type: alpha;
+}
+
+.bottom-box {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
 }
 
 @media screen and (min-device-width: 768px) {
@@ -595,5 +602,24 @@ h1 {
 
   .step-number {
     font-size: 20px;
+  }
+
+  .image-container {
+    order: -1;
+  }
+
+  .details-container {
+    display: grid;
+  
+  }
+
+  .footer-guarantee,
+  .image-container {
+    font-size: 16px;
+  }
+  .comment,
+  .image-container {
+    display: flex;
+    flex-direction: column;
   }
 }
