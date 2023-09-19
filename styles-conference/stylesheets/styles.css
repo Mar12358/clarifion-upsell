@@ -126,7 +126,7 @@ body {
   display: none;
 }
 
-.inner-body {
+.top-body {
   padding: 32px 20px 32px 20px;
   display: flex;
   flex-direction: column;
@@ -142,13 +142,14 @@ h1 {
   font-weight: 400;
   line-height: 140%; /* 44.8px */
   text-transform: capitalize;
+  margin-top: -10px;
+  margin-bottom: -10px;
 }
 
 .lorem {
   color: #4d5254;
   text-align: center;
   font-family: Manrope, sans-serif;
-  height: 12px;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -157,6 +158,8 @@ h1 {
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-top: -5px;
+  margin-bottom: -5px;
 }
 
 .title-container {
@@ -299,5 +302,44 @@ h1 {
 
   .lower-header-container {
     padding: 16px 127px 16px 127px;
+  }
+
+  .top-body {
+    padding: 0 8.5% 61px 8.5%;
+    margin-top: -25px;
+    gap: 60px;
+  }
+
+  h1 {
+    font-size: 48px;
+    margin-bottom: -12px;
+  }
+
+  .lorem {
+    font-size: 24px;
+    margin-bottom: -6px;
+  }
+
+  .step {
+    flex-direction: row;
+    gap: 20px;
+  }
+
+  .step-text {
+    font-size: 20px;
+  }
+
+  .circle {
+    height: 38px;
+    width: 38px;
+  }
+
+  .empty-circle {
+    height: 36px;
+    width: 36px;
+    border: 2px solid #2c7ef8;
+  }
+  .step-number {
+    font-size: 20px;
   }
 }
