@@ -126,6 +126,114 @@ body {
   display: none;
 }
 
+.top-body {
+  padding: 32px 20px 32px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+h1 {
+  color: #000;
+  text-align: center;
+  font-family: Manrope, sans-serif;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%; /* 44.8px */
+  text-transform: capitalize;
+  margin-top: -10px;
+  margin-bottom: -10px;
+}
+
+.lorem {
+  color: #4d5254;
+  text-align: center;
+  font-family: Manrope, sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%; /* 22.4px */
+  text-transform: capitalize;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: -5px;
+  margin-bottom: -5px;
+}
+
+.title-container {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.step-text {
+  color: #000;
+  font-family: Manrope, sans-serif;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 110%; /* 13.2px */
+  text-transform: capitalize;
+}
+
+.actual {
+  font-weight: 700;
+}
+
+.circle {
+  height: 18px;
+  width: 18px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.green-circle {
+  background-color: #85bf55;
+  border: 1px solid #85bf55;
+}
+
+.blue-circle {
+  background-color: #2c7ef8;
+  border: 1px solid #2c7ef8;
+}
+
+.steps-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.step {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+
+.step-number {
+  font-family: Manrope, sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 110%; /* 15.4px */
+  text-transform: capitalize;
+}
+
+.current-step-number {
+  color: #fff;
+}
+
+.following-step-number {
+  color: #2c7ef8;
+}
+
+.empty-circle {
+  border: 1px solid #2c7ef8;
+}
+
 @media screen and (min-device-width: 768px) {
   .encryptation-container {
     padding-top: 0;
@@ -194,5 +302,45 @@ body {
 
   .lower-header-container {
     padding: 16px 127px 16px 127px;
+  }
+
+  .top-body {
+    padding: 0 8.5% 61px 8.5%;
+    margin-top: -25px;
+    gap: 60px;
+  }
+
+  h1 {
+    font-size: 48px;
+    margin-bottom: -12px;
+  }
+
+  .lorem {
+    font-size: 24px;
+    margin-bottom: -6px;
+  }
+
+  .step {
+    flex-direction: row;
+    gap: 20px;
+  }
+
+  .step-text {
+    font-size: 20px;
+  }
+
+  .circle {
+    height: 38px;
+    width: 38px;
+  }
+
+  .empty-circle {
+    height: 36px;
+    width: 36px;
+    border: 2px solid #2c7ef8;
+  }
+
+  .step-number {
+    font-size: 20px;
   }
 }
