@@ -43,7 +43,7 @@ const largeScreenStars = `
   </svg>
 `;
 // Define the URLs of the images for small and large screens
-const smallScreenClarifonImageUrl = 'styles-conference/assets/image-mob.png';
+const smallScreenClarifonImageUrl = 'styles-conference/assets/image-removebg_mob.png';
 const largeScreenClarifonImageUrl = 'styles-conference/assets/image-removebg_dsk.png';
 
 // Define the SVGs of the payments methods for small and large screens
