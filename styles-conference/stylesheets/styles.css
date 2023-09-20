@@ -324,7 +324,7 @@ h1 {
   text-decoration-line: line-through;
 }
 
-.stars {
+#stars {
   display: flex;
   align-items: center;
 }
@@ -402,6 +402,7 @@ h1 {
   line-height: normal;
   text-transform: uppercase;
   padding: 16px;
+  margin-bottom: 12px;
 }
 
 .payment {
@@ -477,13 +478,14 @@ h1 {
   width: 48px;
   height: 48px;
   flex-shrink: 0;
-  background-image: url(../assets/guarantee_img_mob.png);
+  /* background-image: url(../assets/guarantee_img_mob.png); */
   background-size: cover;
   background-repeat: no-repeat;
   display: block;
 }
 
-#mask0_78_423 {
+#mask0_78_423,
+#mask0_1_121 {
   mask-type: alpha;
 }
 
@@ -497,7 +499,10 @@ h1 {
   .encryptation-container {
     padding-top: 0;
   }
-
+  .bottom-box {
+    gap: 32px;
+    padding-right: 40px;
+  }
   .copyright-contact-container {
     display: flex;
     align-items: center;
@@ -605,9 +610,11 @@ h1 {
 
   .image-container {
     order: -1;
+    padding: 40px 20px 38px 40px;
   }
 
   .details-container {
+    padding: 0;
     flex-direction: row;
     border-radius: 10px;
     background-color: #FAFAFA;
@@ -625,13 +632,17 @@ h1 {
   .image-container {
     display: flex;
     flex-direction: column;
-    padding: 24px;
     gap: 18px;
     
+  }
+  .image-container img {
+    width: 100%; /* Set the desired width percentage */
+    height: auto; /* Maintain aspect ratio */
   }
   .comment {
     border-radius: 10px;
     background: #FFF;
+    padding: 24px;
   }
 
   .comment-owner-text {
@@ -677,5 +688,52 @@ h1 {
     flex-direction: column;
     justify-content: space-evenly;
     gap: 7px;
+  }
+
+  .guarantee-img {
+    width: 88px;
+    height: 88px;
+  }
+
+  .take-back {
+    margin-top: 20px;
+    font-size: 18px;
+  }
+
+  .payment {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+  }
+  .ad-title {
+    font-size: 32px;
+    text-align: start;
+  }
+  .stock-details-text {
+    font-size: 20px;
+  }
+  .current-price {
+    font-size: 22px;
+  }
+  .price {
+    gap: 10px;
+  }
+  .item-description {
+    font-size: 16px;
+    text-align: start;
+  }
+  .old-price,
+  .left-in-stock-text,
+  .list li,
+  .promo-container {
+    font-size: 16px;
+  }
+  .claim-discount-btn {
+    font-size: 20px;
+  }
+  .stock-img-container {
+    height: 134px;
+    width: 134px;
   }
 }
