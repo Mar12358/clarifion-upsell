@@ -1,7 +1,7 @@
 // Select responsive DOM elements
-const responsiveImage = document.getElementById('responsive-guarantee-img');
+const responsiveGuaranteeImage = document.getElementById('responsive-guarantee-img');
 const responsiveStars = document.getElementById('stars');
-
+const responsiveClarifionImage = document.getElementById('image-removebg');
 // Define the URLs of the images for small and large screens
 const smallScreenGuaranteeImageUrl = 'styles-conference/assets/guarantee_img_mob.png';
 const largeScreenGuaranteeImageUrl = 'styles-conference/assets/guarantee_img_dsk.png';
@@ -42,14 +42,18 @@ const largeScreenStars = `
   </svg>
 `;
 
+const smallScreenClarifonImageUrl = 'styles-conference/assets/image-mob.png';
+const largeScreenClarifonImageUrl = 'styles-conference/assets/image-removebg_dsk.png';
 // Arrow function to update the image source based on screen width
 const updateImageSource = () => {
   if (window.matchMedia('(min-width: 768px)').matches) {
-    responsiveImage.src = largeScreenGuaranteeImageUrl;
+    responsiveGuaranteeImage.src = largeScreenGuaranteeImageUrl;
     responsiveStars.innerHTML = largeScreenStars;
+    responsiveClarifionImage.src = largeScreenClarifonImageUrl;
   } else {
-    responsiveImage.src = smallScreenGuaranteeImageUrl;
+    responsiveGuaranteeImage.src = smallScreenGuaranteeImageUrl;
     responsiveStars.innerHTML = smallScreenStars;
+    responsiveClarifionImage.src = smallScreenClarifonImageUrl;
   }
 };
 
