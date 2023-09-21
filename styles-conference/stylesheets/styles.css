@@ -444,6 +444,7 @@ h1 {
   border-bottom: 1px solid #cfcfcf;
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 
 #payment-methods {
