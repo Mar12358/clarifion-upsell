@@ -509,6 +509,7 @@ h1 {
   .bottom-box {
     gap: 32px;
     padding-right: 40px;
+    padding-top: 40px;
   }
 
   .copyright-contact-container {
@@ -629,6 +630,7 @@ h1 {
     width: 83%;
     justify-content: center;
     margin: 0 8.5% 61px 8.5%;
+    align-items: flex-start;
   }
 
   .footer-guarantee,
@@ -786,5 +788,60 @@ h1 {
 
   .payment-info {
     padding: 8px 16px;
+  }
+
+  @media screen and (max-device-width: 1499px) {
+    .ad-title {
+      font-size: 2.1vw;
+    }
+
+    .bottom-box {
+      gap: 1vw;
+    }
+
+    .stock-img-container {
+      height: 8vw;
+      width: 8vw;
+    }
+
+    .stock-img-container img {
+      width: 8vw;
+    }
+
+    .item-description-dsk {
+      display: none;
+    }
+
+    .item-description-mob {
+      display: block;
+    }
+
+    .stock-details-text {
+      font-size: 1.6;
+    }
+
+    .price > * {
+      font-size: 1.5vw;
+    }
+
+    .list li {
+      font-size: 14px;
+    }
+
+    .footer-guarantee {
+      font-size: 1.21vw;
+    }
+
+    .take-back {
+      margin-top: 0.7vw;
+    }
+
+    .promo {
+      padding: 1vw;
+    }
+
+    .details-container {
+      gap: 1vw;
+    }
   }
 }
