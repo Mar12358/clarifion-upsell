@@ -754,40 +754,42 @@ h1 {
     width: 134px;
   }
 
-  .shipping-security {
-    padding-bottom: 0;
-    border-bottom: transparent;
-    display: flex;
-    align-items: center;
-    float: left;
-  }
+  @media screen and (min-device-width: 1399px) {
+    .shipping-security {
+      padding-bottom: 0;
+      border-bottom: transparent;
+      display: flex;
+      align-items: center;
+      float: left;
+    }
 
-  #payment-methods {
-    display: flex;
-    margin-top: 0;
-    margin-right: 0;
-    padding-left: 16px;
-    flex-shrink: 0;
-    justify-content: flex-start;
-    gap: 2px;
-  }
+    #payment-methods {
+      display: flex;
+      margin-top: 0;
+      margin-right: 0;
+      padding-left: 16px;
+      flex-shrink: 0;
+      justify-content: flex-start;
+      gap: 2px;
+    }
 
-  .secure {
-    border-right: 1px solid #cfcfcf;
-    padding-right: 16px;
-  }
+    .secure {
+      border-right: 1px solid #cfcfcf;
+      padding-right: 16px;
+    }
 
-  .shipping {
-    padding-right: 16px;
-  }
+    .shipping {
+      padding-right: 16px;
+    }
 
-  .black-lock-mobile {
-    padding-left: 16px;
-    margin-right: 11px;
-  }
+    .black-lock-mobile {
+      padding-left: 16px;
+      margin-right: 11px;
+    }
 
-  .payment-info {
-    padding: 8px 16px;
+    .payment-info {
+      padding: 8px 16px;
+    }
   }
 
   @media screen and (max-device-width: 1199px) {
