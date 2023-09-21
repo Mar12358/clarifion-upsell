@@ -242,7 +242,7 @@ h1 {
   color: #2c7ef8;
 }
 
-.ad-title {
+.d-title {
   color: #000;
   text-align: center;
   font-size: 24px;
@@ -716,7 +716,7 @@ h1 {
     gap: 0;
   }
 
-  .ad-title {
+  .d-title {
     font-size: 32px;
     text-align: start;
   }
@@ -805,7 +805,7 @@ h1 {
   }
 
   @media screen and (max-device-width: 1199px) {
-    .ad-title {
+    .d-title {
       font-size: 2.1vw;
     }
 
