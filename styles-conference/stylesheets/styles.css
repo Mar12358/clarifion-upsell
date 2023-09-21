@@ -444,6 +444,7 @@ h1 {
   border-bottom: 1px solid #cfcfcf;
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 
 #payment-methods {
@@ -508,6 +509,7 @@ h1 {
   .bottom-box {
     gap: 32px;
     padding-right: 40px;
+    padding-top: 40px;
   }
 
   .copyright-contact-container {
@@ -628,6 +630,7 @@ h1 {
     width: 83%;
     justify-content: center;
     margin: 0 8.5% 61px 8.5%;
+    align-items: flex-start;
   }
 
   .footer-guarantee,
@@ -751,39 +754,108 @@ h1 {
     width: 134px;
   }
 
-  .shipping-security {
-    padding-bottom: 0;
-    border-bottom: transparent;
-    display: flex;
-    align-items: center;
-    float: left;
+  @media screen and (max-device-width: 1100px) {
+    .stock-details-text {
+      white-space: nowrap;
+    }
+
+    .price {
+      position: absolute;
+      margin-left: 15vw;
+      margin-top: 50px;
+    }
   }
 
-  #payment-methods {
-    display: flex;
-    margin-top: 0;
-    margin-right: 0;
-    padding-left: 16px;
-    flex-shrink: 0;
-    justify-content: flex-start;
-    gap: 2px;
+  @media screen and (min-device-width: 1399px) {
+    .shipping-security {
+      padding-bottom: 0;
+      border-bottom: transparent;
+      display: flex;
+      align-items: center;
+      float: left;
+    }
+
+    #payment-methods {
+      display: flex;
+      margin-top: 0;
+      margin-right: 0;
+      padding-left: 16px;
+      flex-shrink: 0;
+      justify-content: flex-start;
+      gap: 2px;
+    }
+
+    .secure {
+      border-right: 1px solid #cfcfcf;
+      padding-right: 16px;
+    }
+
+    .shipping {
+      padding-right: 16px;
+    }
+
+    .black-lock-mobile {
+      padding-left: 16px;
+      margin-right: 11px;
+    }
+
+    .payment-info {
+      padding: 8px 16px;
+    }
   }
 
-  .secure {
-    border-right: 1px solid #cfcfcf;
-    padding-right: 16px;
-  }
+  @media screen and (max-device-width: 1199px) {
+    .ad-title {
+      font-size: 2.1vw;
+    }
 
-  .shipping {
-    padding-right: 16px;
-  }
+    .bottom-box {
+      gap: 1vw;
+    }
 
-  .black-lock-mobile {
-    padding-left: 16px;
-    margin-right: 11px;
-  }
+    .stock-img-container {
+      height: 8vw;
+      width: 8vw;
+    }
 
-  .payment-info {
-    padding: 8px 16px;
+    .stock-img-container img {
+      width: 8vw;
+    }
+
+    .item-description-dsk {
+      display: none;
+    }
+
+    .item-description-mob {
+      display: block;
+    }
+
+    .stock-details-text {
+      font-size: 1.6;
+    }
+
+    .price > * {
+      font-size: 1.5vw;
+    }
+
+    .list li {
+      font-size: 14px;
+    }
+
+    .footer-guarantee {
+      font-size: 1.21vw;
+    }
+
+    .take-back {
+      margin-top: 0.7vw;
+    }
+
+    .promo {
+      padding: 1vw;
+    }
+
+    .details-container {
+      gap: 1vw;
+    }
   }
 }
